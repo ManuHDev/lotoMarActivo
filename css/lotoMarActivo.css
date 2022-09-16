@@ -1,0 +1,11 @@
+.img-animal {
+    border: black 1px solid;
+    padding: 2px;
+    margin: 1px;
+}
+
+.img-selected {
+    border: blue 3px solid;
+    padding: 2px;
+    margin: 1px;
+}

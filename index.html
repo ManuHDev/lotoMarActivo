@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Aplicación CRUD PHP</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/lotoMarActivo.css" />
+    <link rel="stylesheet" href="./css/jquery.modal.min.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <br>
+                <h1>Loto Mar Activo</h1>
+            </div>
+            <hr>
+          <div class="col-md-12 text-center">
+            <a href="#"  class="btn btn-primary mt-4" id="b_sorteo1">Sorteo 1</a>
+            <div class="sorteo" id="sorteo1" style="display:none;">
+              <div class="row">
+                <div class="col-md-6 text-center">
+                    <img class="img-animal" name="0" src="./images/0delfin.png" alt="Delfin" width="80px" height="80px">
+                </div>
+                <div class="col-md-6 text-center">
+                    <img class="img-animal" name="00" src="./images/00ballena.png" alt="Ballena" width="80px" height="80px">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="1" src="./images/1carnero.jpg" alt="Carnero" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="2" src="./images/2toro.png" alt="Toro" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="3" src="./images/3ciempies.jpg" alt="Ciempies" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="4" src="./images/4alacran.jpg" alt="Alacran" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="5" src="./images/5leon.png" alt="Leon" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="6" src="./images/6rana.png" alt="Rana" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="7" src="./images/7perico.png" alt="Perico" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="8" src="./images/8raton.png" alt="Raton" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="9" src="./images/9aguila.jpg" alt="Aguila" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="10" src="./images/10tigre.png" alt="tigre" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="11" src="./images/11gato.jpg" alt="Gato" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="12" src="./images/12caballo.png" alt="caballo" width="80px" height="80px">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="13" src="./images/13mono.png" alt="mono" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="14" src="./images/14paloma.jpg" alt="paloma" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="15" src="./images/15zorro.png" alt="Zorro" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="16" src="./images/16oso.jpg" alt="Oso" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="17" src="./images/17pavo.png" alt="Pavo" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="18" src="./images/18burro.png" alt="Burro" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="19" src="./images/19chivo.jpg" alt="Chivo" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="20" src="./images/20cochino.jpg" alt="Cochino" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="21" src="./images/21gallo.jpg" alt="Gallo" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="22" src="./images/22camello.jpg" alt="Camello" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="23" src="./images/23cebra.png" alt="Cebra" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="24" src="./images/24iguana.png" alt="Iguana" width="80px" height="80px">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="25" src="./images/25gallina.png" alt="Gallina" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="26" src="./images/26vaca.png" alt="Vaca" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="27" src="./images/27perro.png" alt="Perro" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="28" src="./images/28zamuro.png" alt="Zamuro" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="29" src="./images/29elefante.jpg" alt="Elefante" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="30" src="./images/30caiman.png" alt="Caiman" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="31" src="./images/31lapa.png" alt="Lapa" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="32" src="./images/32ardilla.png" alt="Ardilla" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="33" src="./images/33pescado.jpg" alt="Pescado" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="34" src="./images/34venado.jpg" alt="Venado" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="35" src="./images/35jirafa.jpg" alt="Jirafa" width="80px" height="80px">
+                </div>
+                <div class="col-md-1 text-center">
+                    <img class="img-animal" name="36" src="./images/36culebra.png" alt="Ballena" width="80px" height="80px">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="#modal" rel="modal:open" class="btn btn-success mt-4" id="b_jugar1">Jugada</a>
+                    <a href="#"  class="btn btn-warning mt-4" id="b_cerrar1">Cerrar</a>
+                </div>
+              </div>        
+            </div>
+            <hr>
+            <a href="#"  class="btn btn-primary mt-4" id="b_sorteo2">Sorteo 2</a>
+            <div class="sorteo" id="sorteo2" style="display:none;">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <img class="img-animal" src="./images/0delfin.png" alt="Delfin" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img class="img-animal" src="./images/00ballena.png" alt="Ballena" width="80px" height="80px">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/1carnero.jpg" alt="Carnero" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/2toro.png" alt="Toro" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/3ciempies.jpg" alt="Ciempies" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/4alacran.jpg" alt="Alacran" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/5leon.png" alt="Leon" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/6rana.png" alt="Rana" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/7perico.png" alt="Perico" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/8raton.png" alt="Raton" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/9aguila.jpg" alt="Aguila" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/10tigre.png" alt="tigre" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/11gato.jpg" alt="Gato" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/12caballo.png" alt="caballo" width="80px" height="80px">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/13mono.png" alt="mono" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/14paloma.jpg" alt="paloma" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/15zorro.png" alt="Zorro" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/16oso.jpg" alt="Oso" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/17pavo.png" alt="Pavo" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/18burro.png" alt="Burro" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/19chivo.jpg" alt="Chivo" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/20cochino.jpg" alt="Cochino" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/21gallo.jpg" alt="Gallo" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/22camello.jpg" alt="Camello" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/23cebra.png" alt="Cebra" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/24iguana.png" alt="Iguana" width="80px" height="80px">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/25gallina.png" alt="Gallina" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/26vaca.png" alt="Vaca" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/27perro.png" alt="Perro" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/28zamuro.png" alt="Zamuro" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/29elefante.jpg" alt="Elefante" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/30caiman.png" alt="Caiman" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/31lapa.png" alt="Lapa" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/32ardilla.png" alt="Ardilla" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/33pescado.jpg" alt="Pescado" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/34venado.jpg" alt="Venado" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/35jirafa.jpg" alt="Jirafa" width="80px" height="80px">
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <img class="img-animal" src="./images/36culebra.png" alt="Ballena" width="80px" height="80px">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="#"  class="btn btn-success mt-4" id="b_jugar2">Jugada</a>
+                        <a href="#"  class="btn btn-warning mt-4" id="b_cerrar2">Cerrar</a>
+                    </div>
+                  </div>        
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="exampleModalLongTitle">Jugada</h5>
+            </div>
+            <div class="modal-body">
+                <div id="modal-jugada">
+                    Hola
+                </div>
+            </div>
+            <div class="modal-footer">
+              <!--a href="#" class="btn btn-secondary" rel="modal:close">Close</a-->
+              <button type="button" class="btn btn-primary">Guardar</button>
+              <a href="#" rel="modal:close" id="modal-close">Cancelar</a>
+            </div>
+          </div>
+      </div>
+  </body>
+  <script src="./script/jquery.min.js"></script>
+  <script src="./script/jquery.modal.min.js"></script>
+  
+  <script src="./script/lotoMarActivo.js"></script>
+</html>
